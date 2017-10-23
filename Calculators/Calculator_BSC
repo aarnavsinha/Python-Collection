@@ -1,0 +1,66 @@
+#BSC in the file name stands for Basic
+
+import time
+
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    return x / y
+
+def calculate():
+    print("Welcome to the simple Python Calculator!")
+    time.sleep(2)
+    print(" ")
+    print("You have 4 options to choose from: ")
+    time.sleep(2)
+    print(" ")
+    print("1-Addition")
+    print("2-Subtraction")
+    print("3-Multiply")
+    print("4-Divide")
+    time.sleep(1.5)
+    print(" ")
+    choice = int(input("Choose from the following numbers: 1/2/3/4 : "))
+    time.sleep(1.25)
+    print(" ")
+    num_1 = int(input("Enter your first number: "))
+    time.sleep(1.25)
+    print(" ")
+    num_2 = int(input("Enter your second number: "))
+
+    if choice == 1:
+        print(num_1, "+", num_2, "=", add(num_1,num_2))
+
+    elif choice == 2:
+        print(num_1, "-", num_2, "=", subtract(num_1,num_2))
+
+    elif choice == 3:
+        print(num_1, "*", num_2, "=", multiply(num_1,num_2))
+
+    elif choice == 4:
+        print(num_1, "/", num_2, "=", divide(num_1,num_2))
+
+    else:
+        print("Invalid Input.")
+
+def recalculate():
+    recalc_Choice = input("Do you want to calculate again? Y for yes and N for No.")
+
+    if recalc_Choice == "Y":
+        calculate()
+
+    if recalc_Choice == "y":
+        calculate()
+
+    else:
+        print("Thank you for using my calculator!")
+
+calculate()
+recalculate()
