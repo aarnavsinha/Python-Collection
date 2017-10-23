@@ -1,0 +1,57 @@
+import time
+
+
+# This is incomplete, of course. I have just included the basic code to show the mechanic. The rest, how ever is all you.
+def conversation():
+    print(
+        "You are an innocent man, on the run from the cops. Your next moves will either save you or get you killed. What happens, is in your hands.")
+    print(" ")
+    time.sleep(1.25)
+    name = input("Enter your name here: ")
+    time.sleep(5)
+    print(" ")
+    print('%s: Hey, you! Can I make a call? Please?' % (name))
+    print(" ")
+    time.sleep(1.75)
+    print("Stranger: Sure, but why do you have a recent cut on your face?")
+    time.sleep(1.5)
+    print(" ")
+    choice_1 = int(input("1- Tell him the truth\n"
+                         "2- Lie"))
+
+    if choice_1 == 1:
+        time.sleep(2)
+        print(" ")
+        print("%s: I was out partying with my friends, but suddenly a man with a mask came and killed my friend, Jake."
+              "The police has been blaming me for it, and I am on my way to the President, to justify their decision."
+              "Did not even ask me to get a lawyer!" % (name))
+        time.sleep(2)
+        print(" ")
+        print("Stranger: Can I be sure that you are not lying and you really haven't murdered your friends?")
+        time.sleep(2)
+        print(" ")
+        print(
+            "From here onward, You have to write the code, and make your own game. Understand this mechanic, and\nmake your own plots and own stories.\nYou can continue here by making another choice thing.")
+
+    if choice_1 == 2:
+        time.sleep(2)
+        print(" ")
+        print("%s: Some people tried to rob my family, and fighting them, I got this cut." % (name))
+        time.sleep(2)
+        print(" ")
+        print("Stranger: Oh my god! Ok, here, make the call.")
+        time.sleep(2)
+        print(" ")
+        print(
+            "%s: (calling uncle) Uncle Jack! I need you to meet me at the Pizza Place near your house. Need to talk." % (
+            name))
+        time.sleep(2)
+        print(" ")
+        print("Jack: But may I know why you want to meet me?")
+        time.sleep(2)
+        print(" ")
+        print(
+            "From here onward, You have to write the code, and make your own game. Understand this mechanic, and\nmake your own plots and own stories.\nYou can continue here by making another choice thing.")
+
+
+conversation()
