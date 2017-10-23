@@ -1,0 +1,63 @@
+import time
+
+#This program will calculate the age of the person using it.
+
+def calculate():
+    print("Welcome to this simple Python Age calculator.")
+    time.sleep(1.5)
+    name = input("To start with, please enter your name: ")
+    age = int(input("Now, enter your age: "))
+    time.sleep(1.5)
+    day = age * 365
+    minutes = age * 525600
+    seconds = age * 31536000
+    print("Whoa!", name,"has been alive for", day,"days,",minutes,"minutes and",seconds,"seconds! Cool!")
+
+    #Rerunning the program
+
+    choice = input("Hey! Glad to know your actual age! But do you wanna go again? Type Y for Yes and N for No.")
+
+    if choice == "Y":
+        print (" ")
+        print("Welcome to this simple Python Age calculator.")
+        time.sleep(1.5)
+        name = input("To start with, please enter your name: ")
+        age = int(input("Now, enter your age: "))
+        time.sleep(1.5)
+        day = age * 365
+        minutes = age * 525600
+        seconds = age * 31536000
+        print("Whoa!", name, "has been alive for", day, "days,", minutes, "minutes and", seconds, "seconds! Cool!")
+
+        # Rerunning the program
+
+        choice = input("Wanna do it again? Type Y for Yes and N for No.")
+
+    if choice == "y":
+        print (" ")
+        print("Welcome to this simple Python Age calculator.")
+        time.sleep(1.5)
+        name = input("To start with, please enter your name: ")
+        age = int(input("Now, enter your age: "))
+        time.sleep(1.5)
+        day = age * 365
+        minutes = age * 525600
+        seconds = age * 31536000
+        print("Whoa!", name, "has been alive for", day, "days,", minutes, "minutes and", seconds, "seconds! Cool!")
+
+        # Rerunning the program
+
+        choice = input("Wanna go yet again? Type Y for Yes and N for No.")
+
+    else:
+        print(" ")
+        print("Thanks for using this Application!")
+
+calculate()
+
+#Application terminated. The last loop helped it to do it again and again and again, as many times you want.
+
+
+
+
+
